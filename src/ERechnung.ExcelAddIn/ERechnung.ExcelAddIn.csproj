@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <RootNamespace>ERechnung.ExcelAddIn</RootNamespace>
+
+    <!-- Excel-DNA: produces ERechnung-AddIn64.xll (64-bit Excel) and ERechnung-AddIn.xll (32-bit),
+         plus packed single-file versions under bin\...\publish -->
+    <ExcelAddInName>E-Rechnung</ExcelAddInName>
+    <ExcelAddInFileName>ERechnung-AddIn</ExcelAddInFileName>
+    <RunExcelDnaPack>true</RunExcelDnaPack>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="ExcelDna.AddIn" Version="1.9.0" />
+    <PackageReference Include="ExcelDna.Interop" Version="15.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ERechnung.Core\ERechnung.Core.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- The add-in can install the KoSIT validator itself ("KoSIT installieren"), using the same script as developers. -->
+    <EmbeddedResource Include="..\..\tools\setup-kosit.ps1" LogicalName="setup-kosit.ps1" />
+  </ItemGroup>
+
+</Project>
