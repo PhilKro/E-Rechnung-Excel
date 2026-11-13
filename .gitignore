@@ -1,0 +1,22 @@
+# Build output
+bin/
+obj/
+artifacts/
+publish/
+*.user
+*.suo
+.vs/
+.vscode/*
+!.vscode/extensions.json
+
+# Test output
+TestResults/
+*.trx
+coverage*/
+
+# Local tools (portable JRE, KoSIT validator) if someone installs them inside the repo
+.tools/
+
+# Excel temp / lock files
+~$*.xls*
+*.tmp

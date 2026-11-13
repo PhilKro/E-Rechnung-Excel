@@ -1,0 +1,13 @@
+<Project>
+  <PropertyGroup>
+    <LangVersion>latest</LangVersion>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <Deterministic>true</Deterministic>
+    <Company>E-Rechnung-Excel</Company>
+    <Product>E-Rechnung für Excel</Product>
+    <Version>0.1.0</Version>
+    <NeutralLanguage>de-DE</NeutralLanguage>
+  </PropertyGroup>
+</Project>
