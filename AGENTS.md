@@ -37,6 +37,7 @@ src/ERechnung.ExcelAddIn/    net8.0-windows, Excel-DNA; thin layer over Core
 tests/ERechnung.Core.Tests/  xUnit: round trips, sheet mapping, rules, KoSIT acceptance
 tests/excel-smoke.ps1        end-to-end test that drives a hidden Excel through all stages
 tools/setup-kosit.ps1        installs KoSIT validator + XRechnung config + portable JRE per user
+docs/USER-GUIDE.md           end-user instructions; keep button/field names in sync with Ribbon.cs and SheetLayout
 ```
 
 ## Build and test
